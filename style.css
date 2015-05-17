@@ -1,0 +1,40 @@
+body{background-color:#161925;}/*#3C4C57*/
+
+
+#header{background-color:#CBF7ED;width: 90%; margin-left: auto; margin-right: auto; text-align: center;color:#161925;font-family: 'Trebuchet MS';}
+/*#C2CAE8*/
+
+#navbar{width: 90%; margin-left: auto; margin-right: auto; background-color:#CBF7ED; text-align:center; font-family: 'Trebuchet MS';}
+#navbar a{font-weight: bold; font-size: 20; text-decoration: none; color:#161925;}
+#link1 {float: left; padding-left: 10%;}
+#link3 {float: right; padding-right: 10%;}
+
+
+.outtext{text-align:center;padding:10px;border-left-color:#808D8E;border-left-style:solid;border-right-color:#808D8E;border-right-style:solid;
+  text-decoration:none; width: 80%; margin-left:auto;margin-right: auto;color:#CBF7ED;font-family: 'Trebuchet MS'; font-size: 16;}
+
+
+.project{border-left-color:#C4DACF;border-left-style:solid;border-right-color:#C4DACF;border-right-style:solid;
+  text-align: left; padding-left: 3%; width: 70%; margin-left: auto; margin-right: auto; font-family: 'Trebuchet MS';}
+.project h3{color:#CBF7ED;}/*#1B1B1E*/
+.project p{width:300px;color:#808D8E;font-size:12;}/*#1B1B1E*/
+.project img{float: right; padding-right: 5%; margin-top:-72}
+.project h3 a{text-decoration: none; color:#CBF7ED;}/*#1B1B1E*/
+
+
+.subheader{color:#CBF7ED; font-family: 'Trebuchet MS'; margin-left:auto;margin-right: auto;text-align:center;}
+
+.headlink{color:#808D8E; text-decoration: none; margin-left:auto;margin-right:auto;width:1em;}/*#767B91*/
+
+hr{border-color:#C4DACF; width:60%;}/*#C2CAE8*/
+
+#dicthead{color:#C2CAE8; font-family: 'Trebuchet MS'; text-align:center; font-weight: bold; font-size: 40;}
+
+.caption{color:#808D8E; text-decoration: none; text-align:center;font-style:italic;}/*#5E6472*/
+
+.screenshot{display:block;margin-left:auto;margin-right:auto;}
+
+#cardlogo{margin-top:-62px;}
+#wirezlogo{margin-top:-63px;}
+
+iframe{display:block;margin-left:auto;margin-right:auto;}

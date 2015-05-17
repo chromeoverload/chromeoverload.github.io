@@ -1,0 +1,132 @@
+<html>
+  <head>
+  
+  <!-- This code was written from scratch by me (unless otherwise indicated). To use any of this code, please request permission from me at chromeoverload@gmail.com. DO NOT USE ANY OF THIS CODE WITHOUT PERMISSION.-->
+  
+    <title>Mythocompendium</title>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/jpeg" href="https://pbs.twimg.com/profile_images/577893108433604608/59zZcnK3.jpeg">
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="dictstyle.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </head>
+	<body>
+    <div id="dicthead">Mythocompendium of <span></span></div>
+
+    <p class="outtext">The <span class="racename"></span>ians are a <span class="adj"></span> race. <span id="sent1"></span><span id="sent2"></span><span id="sent3"></span><span id="sent4"></span>. 
+</p>
+
+    <script>
+    //define randomAdj function
+    function randomAdj()
+      {
+        var adjs = ['peaceful', 'warhungry', 'advanced', 'primitive', 'intelligent', 'warhungry', 'advanced', 'primitive'];
+		var adjNum = Math.floor((Math.random() * 4));
+		//return adjs[adjNum];
+        var adjselect = Math.floor((Math.random() * 10) + 1);
+        if (adjselect == 1)
+          {
+            return 'peaceful';
+          }
+        if (adjselect == 2)
+          {
+            return 'warhungry';
+          }
+        if (adjselect == 3)
+          {
+            return 'advanced';
+          }
+        if (adjselect == 4)
+          {
+            return 'primitive';
+          }
+        if (adjselect == 5)
+          {
+            return 'intelligent';
+          }
+        if (adjselect == 6)
+          {
+            return 'brutish';
+          }
+        if (adjselect == 7)
+          {
+            return 'strange';
+          }
+        if (adjselect == 8)
+          {
+            return 'greedy';
+          }
+        if (adjselect == 9)
+          {
+            return 'ruthless';
+          }
+        if (adjselect == 10)
+          {
+            return 'evil';
+          }
+          
+      }
+    //end function definition
+    
+    //define random direction function
+    function randomDir()
+      {
+        var directions = ["north", "south", "east", "west"];
+		var dirNum = Math.floor((Math.random() * 4));
+		return directions[dirNum];
+      }
+    
+    //define random sentence function
+    function randomSent()
+      {
+        var country1 = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, Math.floor((Math.random() * 10) + 1));
+        var country2 = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, Math.floor((Math.random() * 10) + 1));
+        var direction = randomDir();
+        var option = Math.floor((Math.random() * 4) + 1);
+        
+        if (option == 1)
+        {
+        return  name + " is bordered by " + country1 + " to the " + direction + ". ";
+        }
+        
+        if (option == 2)
+        {
+        return  name + " is at war with " + country1 + ". ";
+        }
+        
+        if (option == 3)
+        {
+        return  name + " is allied with " + country1 + ". ";
+        }
+        
+        if (option == 4)
+        {
+        return  name + " trades with " + country1 + " and " + country2 + ". ";
+        }
+        
+      }
+      
+//function randomVerb
+function randomVerb()
+{
+var verbs = ["fights", "trades", "debates", "disputes with"];
+var verbNum = Math.floor((Math.random() * 4));
+return verbs[verbNum];
+}
+
+   //variable definition   
+    var name = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, Math.floor((Math.random() * 10) + 1));
+      
+   //JS variable displaying  
+    document.querySelector('#dicthead span').innerHTML = name;
+    document.querySelector('.racename').innerHTML = name;
+    document.querySelector('.adj').innerHTML = randomAdj();
+    document.querySelector('#sent1').innerHTML = randomSent();
+    document.querySelector('#sent2').innerHTML = randomSent();
+    document.querySelector('#sent3').innerHTML = randomSent();
+
+document.querySelector('#sent4').innerHTML = randomVerb();
+    </script>
+   
+   </body>
+</html>
