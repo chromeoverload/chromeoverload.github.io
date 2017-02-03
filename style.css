@@ -10,8 +10,9 @@ body{background-color:#161925;}/*#3C4C57*/
 #link3 {float: right; padding-right: 10%;}
 
 
-.outtext{text-align:center;padding:10px;border-left-color:#808D8E;border-left-style:solid;border-left-style: double;border-right-color:#808D8E;border-right-style:solid;
+.outtext{text-align:center;padding:10px;border-left-color:#808D8E;border-left-style:solid;border-right-color:#808D8E;border-right-style:solid;
   text-decoration:none; width: 80%; margin-left:auto;margin-right: auto;color:#CBF7ED;font-family: 'Trebuchet MS'; font-size: 16;}
+/*border-left-style: double;*/
 
 a{color:#706677;font-weight:bold;text-decoration:none;}
 
