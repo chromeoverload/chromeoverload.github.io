@@ -28,7 +28,7 @@ a{color:#706677;font-weight:bold;text-decoration:none;}
 
 /*.headlink{color:#808D8E; text-decoration: none; margin-left:auto;margin-right:auto;width:1em;} #767B91*/
 
-hrborder-left-color:#FCF7F8;border-left-style:solid;border-right-color:#FCF7F8;border-right-style:solid;width:60%;}/*#C4DACF*/
+hr{border-left-color:#FCF7F8;border-left-style:solid;border-right-color:#FCF7F8;border-right-style:solid;width:60%;}/*#C4DACF*/
 
 #dicthead{color:#C2CAE8; font-family: 'Trebuchet MS'; text-align:center; font-weight: bold; font-size: 40;}
 
