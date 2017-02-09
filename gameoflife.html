@@ -39,7 +39,9 @@
 		{
 			for(col = 0; col<worldsize; col++)
 			{
-				
+				var rand;
+				rand = Math.random()*2;
+				gridCurrent[row][col] = (rand > 0.5);
 			}
 		}
 	  }
