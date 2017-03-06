@@ -44,7 +44,7 @@
 			{
 				var rand;
 				rand = Math.random()*2;
-				gridCurrent[row][col] = (rand >= 0.5);
+				gridCurrent[row][col] = ((Math.floor(rand*2)) == 1);
 			}
 		}
 	  }
