@@ -13,6 +13,9 @@
   </head>
 	<body>
   
+		<p id="p">
+      
+    		</p>
   
   
   <script>
@@ -44,6 +47,29 @@
 				gridCurrent[row][col] = (rand > 0.5);
 			}
 		}
+	  }
+	  
+	  function printGrid()
+	  {
+		  var grid = "";
+		  var row;
+		  var col;
+		for(row = 0; row<worldsize; row++)
+		{
+			for(col = 0; col<worldsize; col++)
+			{
+				if(gridCurrent[row][col])
+				{
+					grid += 8;
+				}
+				else
+				{
+					grid += 0;
+				}
+			}
+			grid += "<br/>";
+		}
+		document.querySelector('#p').innerHTML = grid;
 	  }
   </script>
 	
