@@ -47,6 +47,7 @@
 				gridCurrent[row][col] = ((Math.floor(rand*2)) == 1);
 			}
 		}
+		printGrid();
 	  }
 	  
 	  function printGrid()
@@ -70,7 +71,6 @@
 			grid += "<br/>";
 		}
 		document.querySelector('#p').innerHTML = grid;
-	  	printGrid();
 	  }
 	  
 	  spawnGrid();
