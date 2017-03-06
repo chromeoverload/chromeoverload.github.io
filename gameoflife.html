@@ -13,9 +13,9 @@
   </head>
 	<body>
   
-		<p id="p">
+		<h1 id="p">
       
-    		</p>
+    		</h1>
   
   
   <script>
@@ -44,7 +44,7 @@
 			{
 				var rand;
 				rand = Math.random()*2;
-				gridCurrent[row][col] = (rand > 0.5);
+				gridCurrent[row][col] = (rand >= 0.5);
 			}
 		}
 	  }
@@ -78,7 +78,7 @@
 	
 		
 	<style>
-		
+		#p{text-align:center;font-family: 'Lucida Console';font-weight: bold;}	
 	</style>
   </body>
   </html>
