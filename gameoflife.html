@@ -19,7 +19,7 @@
   
   
   <script>
-	  var worldsize = 5;
+	  var worldsize = 15;
 	  
 	  var gridCurrent = new Array(worldsize);
 	  var i;
@@ -60,11 +60,11 @@
 			{
 				if(gridCurrent[row][col])
 				{
-					grid += 8;
+					grid += "■";
 				}
 				else
 				{
-					grid += 0;
+					grid += "  ";
 				}
 			}
 			grid += "<br/>";
