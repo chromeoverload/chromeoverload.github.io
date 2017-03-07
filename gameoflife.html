@@ -71,6 +71,7 @@
 			grid += "<br/>";
 		}
 		document.querySelector('#p').innerHTML = grid;
+		setTimeout(printGrid,1000);
 	  }
 	  
 	  
@@ -82,7 +83,7 @@
             for(rowS = 0;rowS<worldSize;rowS++)
             {
                 
-            for(int colS=0;colS<worldSize;colS++)
+            for(colS=0;colS<worldSize;colS++)
             {
                     //Counter
                     var liveNeighbors = 0;
@@ -151,15 +152,12 @@
                         gridCurrent[rowS][colS] = gridNext[rowS][colS];
                     }
                 }
-            printGrid();
 		setTimeout(runSim,1000);
 	  }
 	  
 	  
 	  
 	  spawnGrid();
-	  printGrid();
-	  //spawnGrid();
 	  printGrid();
 	  //runSim();
   </script>
