@@ -73,7 +73,90 @@
 		document.querySelector('#p').innerHTML = grid;
 	  }
 	  
+	  function runSim()
+	  {
+		while(true) //numSteps > 0
+        	{
+			var row;
+			var col;
+            for(row = 0;row<worldSize;row++)
+            {
+                
+            for(int col=0;col<worldSize;col++)
+            {
+                    //Counter
+                    var liveNeighbors = 0;
+		    var r;
+		    var c;
+                    for(r=row-1;r<row+2;r++)
+                    {
+                        for(c=col-1;c<col+2;c++)
+                        {
+                            //Temp Location
+                            var tempr = r;
+                            var tempc = c;
+                            
+                            //Warps for Row
+                            if(tempr<0)
+                            {
+                                tempr = worldSize-1;
+                            }
+                            else if(tempr > (worldSize-1))
+                            {
+                                tempr = 0;
+                            }
+                            
+                            //Warps for Columns
+                            if(tempc<0)
+                            {
+                                tempc = worldSize-1;
+                            }
+                            else if(tempc > (worldSize-1))
+                            {
+                                tempc = 0;
+                            }
+                            
+                            //Check Current Square
+                            if(tempr < (worldSize) && tempr >= 0 && tempc < (worldSize) && tempc >= 0)
+                            {
+                                if(gridCurrent[tempr][tempc])
+                                {
+                                    liveNeighbors++;
+                                }
+                            }
+                            
+                        }
+                    }
+                    if(gridCurrent[row][col])
+                    {
+                        liveNeighbors--;
+                    }
+                    
+                    //Set Next Grid Values
+                    if(gridCurrent[row][col])
+                            {
+                                gridNext[row][col] = (liveNeighbors > 1 && liveNeighbors < 4); //
+                            }
+                            else
+                            {
+                                gridNext[row][col] = (liveNeighbors == 3); //
+                            }
+            }
+            }
+            
+            for(int row=0;row<worldSize;row++)
+                {
+                for(int col=0;col<worldSize;col++)
+                    {
+                        gridCurrent[row][col] = gridNext[row][col];
+                    }
+                }
+            printGrid();
+        }  
+	  }
+	  
 	  spawnGrid();
+	  runSim();
   </script>
 	
 		
