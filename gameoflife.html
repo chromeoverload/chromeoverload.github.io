@@ -71,7 +71,7 @@
 			grid += "<br/>";
 		}
 		document.querySelector('#p').innerHTML = grid;
-		setTimeout(printGrid,1000);
+		//setTimeout(printGrid,1000);
 	  }
 	  
 	  
@@ -152,6 +152,7 @@
                         gridCurrent[rowS][colS] = gridNext[rowS][colS];
                     }
                 }
+		  printGrid();
 		setTimeout(runSim,1000);
 	  }
 	  
