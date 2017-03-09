@@ -16,8 +16,7 @@
 		<h1 id="p">
       
     		</h1>
-  
-  
+		<h4><a id = "mylink" href="#">Click here to recolor the Grandmaster (and get more great advice)</a></h4>
   <script>
 	  var worldsize = 15;
 	  
@@ -47,7 +46,7 @@
 				gridCurrent[row][col] = ((Math.floor(rand*2)) == 1);
 			}
 		}
-		//printGrid();
+		printGrid();
 	  }
 	  
 	  function printGrid()
@@ -156,11 +155,19 @@
 		//setTimeout(runSim,1000);
 	  }
 	  
+	  window.onload = function() {
+          
+          var a = document.getElementById("mylink");
+          
+          a.onclick = function() {
+		  spawnGrid();
+		  return false;
+          }
+          }
 	  
-	  
-	  spawnGrid();
-	  printGrid();
-	  runSim();
+	  //spawnGrid();
+	  //printGrid();
+	  //runSim();
   </script>
 	
 		
