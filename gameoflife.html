@@ -18,28 +18,28 @@
     		</h1>
 		<h4><a id = "mylink" href="#">Click here to recolor the Grandmaster (and get more great advice)</a></h4>
   <script>
-	  var worldsize = 15;
+	  var worldSize = 15;
 	  
-	  var gridCurrent = new Array(worldsize);
+	  var gridCurrent = new Array(worldSize);
 	  var i;
-	  for (i=0; i<worldsize; i++)
+	  for (i=0; i<worldSize; i++)
 	  {
-		  gridCurrent[i]=new Array(worldsize);
+		  gridCurrent[i]=new Array(worldSize);
 	  }
 	  
-	  var gridNext = new Array(worldsize);
-	  for (i=0; i<worldsize; i++)
+	  var gridNext = new Array(worldSize);
+	  for (i=0; i<worldSize; i++)
 	  {
-		  gridCurrent[i]=new Array(worldsize);
+		  gridCurrent[i]=new Array(worldSize);
 	  }
 	  
 	  function spawnGrid()
 	  {
 		var row;
 		var col;
-	  	for(row = 0; row<worldsize; row++)
+	  	for(row = 0; row<worldSize; row++)
 		{
-			for(col = 0; col<worldsize; col++)
+			for(col = 0; col<worldSize; col++)
 			{
 				var rand;
 				rand = Math.random()*2;
@@ -54,9 +54,9 @@
 		  var grid = "";
 		  var row;
 		  var col;
-		for(row = 0; row<worldsize; row++)
+		for(row = 0; row<worldSize; row++)
 		{
-			for(col = 0; col<worldsize; col++)
+			for(col = 0; col<worldSize; col++)
 			{
 				if(gridCurrent[row][col])
 				{
