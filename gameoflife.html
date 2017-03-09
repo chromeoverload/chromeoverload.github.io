@@ -151,7 +151,7 @@
                         gridCurrent[rowS][colS] = gridNext[rowS][colS];
                     }
                 }
-		//printGrid();
+		printGrid();
 		//setTimeout(runSim,1000);
 	  }
 	  
@@ -160,12 +160,12 @@
           var a = document.getElementById("mylink");
           
           a.onclick = function() {
-		  spawnGrid();
+		  runSim();
 		  return false;
           }
           }
 	  
-	  //spawnGrid();
+	  spawnGrid();
 	  //printGrid();
 	  //runSim();
   </script>
