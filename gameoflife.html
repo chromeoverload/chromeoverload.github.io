@@ -133,11 +133,11 @@
 				  //Set Next Grid Values
 				  if(gridCurrent[rowS][colS])
 				  {
-					  gridNext[rowS][colS] = (liveNeighbors > 1 && liveNeighbors < 4);
+					  gridNext[rowS][colS].push(liveNeighbors > 1 && liveNeighbors < 4); //gridNext[rowS][colS] = (liveNeighbors > 1 && liveNeighbors < 4);
 				  }
 				  else
 				  {
-					  gridNext[rowS][colS] = (liveNeighbors == 3);
+					  gridNext[rowS][colS].push(liveNeighbors == 3); //gridNext[rowS][colS] = (liveNeighbors == 3);
 				  }
 			  }
 		  }
