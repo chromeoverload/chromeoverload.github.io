@@ -118,14 +118,14 @@
 						  //Check Current Square
 						  if(tempr < (worldSize) && tempr >= 0 && tempc < (worldSize) && tempc >= 0)
 						  {
-							  if(gridCurrent[tempr][tempc])
+							  if(Boolean(gridCurrent[tempr][tempc]))
 							  {
 								  liveNeighbors++;
 							  }
 						  }
 					  }
 				  }
-				  if(gridCurrent[rowS][colS])
+				  if(Boolean(gridCurrent[rowS][colS]))
 				  {
 					  liveNeighbors--;
 				  }
