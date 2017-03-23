@@ -16,7 +16,7 @@
 		<h4 id="p">
       
     		</h4>
-		<button id="mylink" onclick="running = true;">Click here to recolor the Grandmaster (and get more great advice)</button>
+		<button id="mylink" onclick="toggleRun()">Click here to recolor the Grandmaster (and get more great advice)</button>
   <script>
 	  var worldSize = 50;
 	  var running = false;
@@ -32,6 +32,18 @@
 	  for (i=0; i<worldSize; i++)
 	  {
 		  gridNext[i]=new Array(worldSize);
+	  }
+	  
+	  function toggleRun()
+	  {
+		  if(running)
+		  {
+			  running = false;
+		  }
+		  else
+		  {
+			  running = true;
+		  }
 	  }
 	  
 	  function spawnGrid()
