@@ -16,7 +16,7 @@
 		<h4 id="p">
       
     		</h4>
-		<button id="mylink" onclick="toggleRun()">Click here to recolor the Grandmaster (and get more great advice)</button>
+		<button id="mylink">Click here to recolor the Grandmaster (and get more great advice)</button>
   <script>
 	  var worldSize = 50;
 	  var running = false;
@@ -171,7 +171,7 @@
           var a = document.getElementById("mylink");
           
           a.onclick = function() {
-		  //runSim();
+		  toggleRun();
 		  return false;
           }
           }
