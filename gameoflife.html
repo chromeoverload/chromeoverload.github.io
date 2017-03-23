@@ -20,6 +20,7 @@
   <script>
 	  var worldSize = 50;
 	  var running = false;
+	  var speed = 100;
 	  
 	  var gridCurrent = new Array(worldSize);
 	  var i;
@@ -32,6 +33,17 @@
 	  for (i=0; i<worldSize; i++)
 	  {
 		  gridNext[i]=new Array(worldSize);
+	  }
+	  
+	  function step()
+	  {
+		  if(running)
+	  		{
+				runSim();  
+	  		}
+		  
+		  printGrid();
+		  setTimeout(step,speed);
 	  }
 	  
 	  function toggleRun()
@@ -163,7 +175,6 @@
 		  }
 		  //spawnGrid();
 		  printGrid();
-		  setTimeout(runSim,100);
 	  }
 	  
 	  window.onload = function() {
@@ -176,12 +187,7 @@
           }
           }
 	  
-	  spawnGrid();
-	  if(running)
-	  {
-		runSim();  
-	  }
-	  
+	  spawnGrid();	  
 	  //gridCurrent[1][1] = true;
 	  //printGrid();
 	  //runSim();
