@@ -17,10 +17,11 @@
       
     		</h3>
 		<button id="start" onclick="toggleRun()">Start/Stop</button>
+		<button id="start" onclick="changedSpeed(10)">></button>
   <script>
 	  var worldSize = 50;
 	  var running = true;
-	  var speed = 0;
+	  var speed = 100;
 	  
 	  var gridCurrent = new Array(worldSize);
 	  var i;
@@ -35,6 +36,11 @@
 		  gridNext[i]=new Array(worldSize);
 	  }
 	  
+	  function changeSpeed(var increment)
+	  {
+		speed += increment;  
+	  }
+	  
 	  function step()
 	  {
 		  if(running)
@@ -43,7 +49,7 @@
 	  		}
 		  
 		  printGrid();
-		  setTimeout(step,100*Math.pow(5,speed));
+		  setTimeout(step,speed);
 	  }
 	  
 	  function toggleRun()
@@ -182,7 +188,7 @@
           var a = document.getElementById("mylink");
           
           a.onclick = function() {
-		  toggleRun();
+		  //toggleRun();
 		  return false;
           }
           }
