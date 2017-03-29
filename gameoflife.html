@@ -20,7 +20,7 @@
   <script>
 	  var worldSize = 50;
 	  var running = true;
-	  var speed = 100;
+	  var speed = 0;
 	  
 	  var gridCurrent = new Array(worldSize);
 	  var i;
@@ -43,7 +43,7 @@
 	  		}
 		  
 		  printGrid();
-		  setTimeout(step,speed);
+		  setTimeout(step,Math.pow(100,speed));
 	  }
 	  
 	  function toggleRun()
