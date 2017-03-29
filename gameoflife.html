@@ -19,6 +19,7 @@
 		<button id="start" onclick="toggleRun()">Start/Stop</button>
 		<button id="start" onclick="changeSpeed(20)">&#60;</button>
 		<button id="start" onclick="changeSpeed(-20)">></button>
+		<button id="start" onclick="clearGrid()">></button>
   <script>
 	  var worldSize = 50;
 	  var running = true;
@@ -35,6 +36,19 @@
 	  for (i=0; i<worldSize; i++)
 	  {
 		  gridNext[i]=new Array(worldSize);
+	  }
+	  
+	  function clearGrid()
+	  {
+		var row;
+		var col;
+	  	for(row = 0; row<worldSize; row++)
+		{
+			for(col = 0; col<worldSize; col++)
+			{
+				gridCurrent[row][col] = true;
+			}
+		}
 	  }
 	  
 	  function changeSpeed(increment)
