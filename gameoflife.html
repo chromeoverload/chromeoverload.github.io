@@ -39,6 +39,16 @@
 		  gridNext[i]=new Array(worldSize);
 	  }
 	  
+	  function changeSize()
+	  {
+		  worldsize++;
+		  var gridNext = new Array(worldSize);
+	  	  	for (i=0; i<worldSize; i++)
+	    		{
+		  		gridNext[i]=new Array(worldSize);
+	  		}
+	  }
+	  
 	  function clearGrid()
 	  {
 		var row;
