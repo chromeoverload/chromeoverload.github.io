@@ -21,6 +21,7 @@
 		<button id="button" onclick="changeSpeed(-20)">></button>
 		<button id="button" onclick="clearGrid()">Clear Grid</button>
 		<button id="button" onclick="spawnGrid()">Randomize Grid</button>
+		<button id="button" onclick="changeSize()">Size</button>
   <script>
 	  var worldSize = 50;
 	  var running = false;
@@ -47,6 +48,26 @@
 	    		{
 		  		gridNext[i]=new Array(worldSize);
 	  		}
+		  
+		  for(row = 0; row<worldSize-1; row++)
+		{
+			for(col = 0; col<worldSize-1; col++)
+			{
+				gridNext[row][col] = gridCurrent[row][col];
+			}
+		}
+		  
+		  for(col = 0; col<worldSize-1; col++)
+			{
+				gridNext[worldSize-1][col] = false;
+			}
+		  
+		  for(row = 0; row<worldSize-1; row++)
+			{
+				gridNext[row][worldSize-1] = false;
+			}
+		  
+		  gridCurrent = gridNext;
 	  }
 	  
 	  function clearGrid()
