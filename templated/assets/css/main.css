@@ -1307,6 +1307,7 @@
 
 		#header a {
 			color: inherit;
+			border-bottom: none;
 		}
 
 			#header a:hover {
