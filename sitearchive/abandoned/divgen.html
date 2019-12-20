@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <!-- This code was written from scratch by me (unless otherwise indicated). To use any of this code, please request permission from me at chromeoverload@gmail.com. DO NOT USE ANY OF THIS CODE WITHOUT PERMISSION.-->
+
+    <title>HTML Content Generator</title>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/jpeg" href="https://pbs.twimg.com/profile_images/577893108433604608/59zZcnK3.jpeg">
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </head>
+	<body>
+
+	  <h1 style="text-align:center;">HTML Content Generator</h1>
+
+	  <form method="post" action="javascript">
+	    <input name="content" type="text" style="display:block;margin-left:auto;margin-right:auto;width:60%;">
+	    <br/>
+
+	    <div class="dropdown" style="width:185px;">
+	    <label for="font" style="float:left;text-align:center;">Font Family: </label>
+	    <select name ="font" style="float:right;display:block;margin-left:auto;margin-right:auto;">
+	      <option>Default</option>
+	      <option>Serif</option>
+	      <option>Sans Serif</option>
+	    </select>
+	    </div>
+	    <br/>
+	    <br/>
+
+	    <div class="dropdown" style="width:180px;">
+	    <label for="textalign" style="float:left;text-align:center;">Text Alignment: </label>
+	    <select name ="textalign" style="float:right;display:block;margin-left:auto;margin-right:auto;">
+	      <option>Default</option>
+	      <option>Left</option>
+	      <option>Right</option>
+	      <option>Center</option>
+	    </select>
+	    </div>
+	    <br/>
+        <br/>
+
+<div class="dropdown" style="width:300px;">
+          <label for="color" style="float:left;text-align:center;">Text Color (Hex): </label>
+          <input name="color" type="text" style="display:block;margin-left:auto;margin-right:auto;">
+          </div>
+          <br/>
+          <br/>
+
+<div class="dropdown" style="width:400px;">
+          <label for="bgcolor" style="float:left;text-align:center;">Background Color (Hex): </label>
+          <input name="bgcolor" type="text" style="display:block;margin-left:auto;margin-right:auto;width:40%;">
+          </div>
+          <br/>
+          <br/>
+
+        <input name="submit" type="submit" style="display:block;margin-left:auto;margin-right:auto;">
+          </form>
+
+	  <h1 style="text-align:center;">Content Preview</h1>
+	  <p id="preview"></p>
+
+	  <style>
+	    .dropdown{display:block; margin-left:auto; margin-right:auto; text-align:center;}
+	  </style>
+
+	  <script>
+	    function submitData()
+	    {
+
+	    }
+	  </script>
+
+	</body>
+</html>

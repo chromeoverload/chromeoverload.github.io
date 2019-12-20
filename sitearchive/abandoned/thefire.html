@@ -1,0 +1,47 @@
+<html>
+  <!-- This code was written from scratch by me (unless otherwise indicated). To use any of this code, please request permission from me at chromeoverload@gmail.com. DO NOT USE ANY OF THIS CODE WITHOUT PERMISSION.-->
+  <head>
+    <title>The Fire .</title>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/jpeg" href="https://pbs.twimg.com/profile_images/577893108433604608/59zZcnK3.jpeg">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+      <table class="fire">
+        <tr>
+          <td class="colored">hi</td>
+          <td class="colored">hi</td>
+        </tr>
+        <tr>
+          <td class="colored">hi</td>
+          <td class="colored">hi</td>
+          <td class="colored">hi</td>
+        </tr>
+      </table>
+
+      <style>
+          .fire{font-family:'Poiret One';text-align:center;font-size:200;display:block;margin-left:auto;margin-right:auto;color:#ffffff;width:80%;}
+      </style>
+
+      <script>
+
+          function changeColor()
+          {
+          document.querySelector("body").style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+          document.querySelector(".colored").style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+          setTimeout(changeColor,1000);
+          }
+          changeColor();
+      </script>
+
+    <!--
+    <a class="twitter-share-button" href="https://twitter.com/share"data-url="http://goo.gl/ElVU0f" data-via="chromeoverload" data-text="Grandmaster Koi always gives #goodadvice">Tweet</a>
+
+<script>
+window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+</script>
+      -->
+
+  </body>
+</html>
