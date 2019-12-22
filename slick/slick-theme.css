@@ -71,10 +71,11 @@
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: #343A40; /*EDITED: was white*/
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: color 0.5s;
 }
 
 .slick-prev

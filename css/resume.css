@@ -213,11 +213,23 @@ a:hover, a:focus, a:active {
 }
 
 .projhighlight {
+    width: 70%; display: block;
+}
 
+.projcarousel {
+    width: 50%; height: auto; margin-left: 5%
 }
 
 .projcarousel img {
-    width: 50%; height: auto
+    width: 90%; height: auto; border-style: solid; border-width: thin; border-color: #40288E; box-shadow: 5px 5px 3px #8D71E0; margin-top: 2.5%; display: block; margin-left: auto; margin-right: auto
+}
+
+.projtitle {
+    color: #6138C9
+}
+
+.infolead {
+    font-weight: bold
 }
 
 /* image w/ caption styling */

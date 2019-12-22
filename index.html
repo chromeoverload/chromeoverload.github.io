@@ -21,6 +21,7 @@
         <!-- Custom styles for this template -->
         <link href="css/resume.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
     </head>
 
@@ -47,11 +48,9 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
                     </li>
-                    <!--
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#project">Current Project</a>
+                        <a class="nav-link js-scroll-trigger" href="#project">Projects</a>
                     </li>
-                    -->
                 </ul>
             </div>
         </nav>
@@ -161,13 +160,39 @@
             </section>
 
             <hr class="m-0">
-            <!--
             <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="project">
                 <div class="w-100">
                     <h2 class="mb-5">Projects</h2>
 
                     <div class="projhighlight">
-
+                        <div>
+                            <h3 class="projtitle">This Website</h3>
+                            <p class="projdescrip">My personal website, which has existed in several different phases over the years.</p>
+                            <p class="projinfo"><span class="infolead">Languages:</span> HTML, CSS, JS</p>
+                            <p class="projinfo"><span class="infolead">Libraries/Tools:</span> Bootstrap, Slick</p>
+                            <p class="projinfo"><span class="infolead">Pictured below:</span> The original CSS template I made for my website way back in 2014. I have no idea what I was thinking...</p>
+                        </div>
+                        <div>
+                            <h3 class="projtitle">AcademySS</h3>
+                            <p class="projdescrip">A personal project in the early stages of development for formatting research papers for display online  as HTML. I hope to integrate it with, and offer formatting resources for, data-visualization libraries like D3.js.</p>
+                            <p class="projinfo"><span class="infolead">Languages:</span> HTML, CSS</p>
+                            <p class="projinfo"><span class="infolead">Libraries/Tools:</span> D3.js</p>
+                            <p class="projinfo"><span class="infolead">Pictured below:</span> Some early renderings of header formatting.</p>
+                        </div>
+                        <div>
+                            <h3 class="projtitle">TMB (Barcelona Metro System App)</h3>
+                            <p class="projdescrip">A group project for 'Intro to Database Systems', where we created, using MySQL and JavaFX, an app for users and managers of Barcelona public transit. Users can buy tickets, take trips, etc., and managers can add/remove stations and lines, approve reviews, and so on.</p>
+                            <p class="projinfo"><span class="infolead">Languages:</span> Java, SQL</p>
+                            <p class="projinfo"><span class="infolead">Libraries/Tools:</span> MySQL, JavaFX, WindowBuilder</p>
+                            <p class="projinfo"><span class="infolead">Pictured below:</span> The 'Leave a Review' page in the app as it appears to users, allowing them to leave comments and ratings that are stored in the MySQL database.</p>
+                        </div>
+                        <div>
+                            <h3 class="projtitle">NAR Website</h3>
+                            <p class="projdescrip">The website I manage for North Avenue Review Magazine. While the old version was based off a hand-built backend and written in Ruby Sinatra, the current system I am in the process of moving to is based off the Wix platform.</p>
+                            <p class="projinfo"><span class="infolead">Languages:</span> HTML, Ruby</p>
+                            <p class="projinfo"><span class="infolead">Libraries/Tools:</span> Sinatra, MailChimp, Wix</p>
+                            <p class="projinfo"><span class="infolead">Pictured below:</span> The finalized front page for the new version of the website!</p>
+                        </div>
                     </div>
 
                     <div class="projcarousel">
@@ -180,10 +205,12 @@
                         <div>
                             <img alt="The 'leave reviews' page of the TMB app." src="img/tmb.jpg">
                         </div>
+                        <div>
+                            <img alt="NAR's front page." src="img/nar.jpg">
+                        </div>
                     </div>
                 </div>
             </section>
-            -->
         </div>
 
         <!-- Bootstrap core JavaScript -->
@@ -206,11 +233,13 @@
                 asNavFor: '.projcarousel'
             });
             $('.projcarousel').slick({
-                slidesToShow: 3,
+                slidesToShow: 1,
                 slidesToScroll: 1,
                 asNavFor: '.projhighlight',
+                autoplay: false,
+                arrows: true,
                 dots: true,
-                centerMode: true,
+                centerMode: false,
                 focusOnSelect: true
             });
         </script>
