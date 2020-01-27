@@ -213,11 +213,11 @@ a:hover, a:focus, a:active {
 }
 
 .projhighlight {
-    width: 80%; display: block;
+    width: 100%; display: block;
 }
 
 .projcarousel {
-    width: 70%; height: auto; margin-left: 5%
+    width: 90%; height: auto; margin-left: 5%
 }
 
 .projcarousel img {
